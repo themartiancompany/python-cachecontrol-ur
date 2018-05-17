@@ -33,8 +33,8 @@ build() {
 check() {
     cd "${srcdir}"/${_pkgname}-${pkgver}
 
-    pytest
-    pytest2
+    python -m pytest
+    python2 -m pytest
 }
 
 package_python-cachecontrol() {
