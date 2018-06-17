@@ -4,7 +4,7 @@ _pkgname=cachecontrol
 pkgbase=python-cachecontrol
 pkgname=('python-cachecontrol' 'python2-cachecontrol')
 pkgver=0.12.5
-pkgrel=1
+pkgrel=2
 pkgdesc="httplib2 caching for requests"
 arch=('any')
 url="https://github.com/ionrock/${_pkgname}"
@@ -46,7 +46,7 @@ package_python-cachecontrol() {
 }
 
 package_python2-cachecontrol() {
-    depends=('python-msgpack' 'python2-requests')
+    depends=('python2-msgpack' 'python2-requests')
     optdepends=('python2-lockfile: for the FileCache')
 
     cd "${srcdir}"/${_pkgname}-${pkgver}
