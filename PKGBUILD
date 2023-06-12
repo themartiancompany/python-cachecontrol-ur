@@ -3,7 +3,7 @@
 
 _name=cachecontrol
 pkgname=python-cachecontrol
-pkgver=0.13.0
+pkgver=0.13.1
 pkgrel=1
 epoch=1
 pkgdesc="httplib2 caching for requests"
@@ -19,8 +19,8 @@ depends=(
 )
 makedepends=(
   python-build
+  python-flit-core
   python-installer
-  python-setuptools
   python-wheel)
 checkdepends=(
   python-cherrypy
@@ -35,8 +35,8 @@ optdepends=(
 # not tests in dist tarball on pypi.org: https://github.com/ionrock/cachecontrol/issues/281
 # source=(https://files.pythonhosted.org/packages/source/${_name::1}/$_name/$_name-$pkgver.tar.gz)
 source=($_name-$pkgver.tar.gz::https://github.com/ionrock/$_name/archive/refs/tags/v$pkgver.tar.gz)
-sha256sums=('c30d9112259dad7c83a84f781165076041d7d506ab8d99a6c0d6c06100f35f53')
-b2sums=('b544d8a662a5850c629f76969fce32651c259fbdf59970c138db6418a2aa3104fe180377cfcee2613abd6d239d75d2878d95090615ff59f590c8a0080e711821')
+sha256sums=('d385996b1874b7a12b34bf4735bd1df6cec3abed83252e0fc7095c9bfb5f7e0a')
+b2sums=('67179719c224aaee52b3b61a128caadd25b26137e8ee6bbd77f36074f8d8889bf27a56a6bfe41ad376361b4055c49be046f46b964cd6a0cff3b670c9d8e5af9d')
 
 build() {
   cd $_name-$pkgver
