@@ -1,13 +1,12 @@
 pkgbase = python-cachecontrol
 	pkgdesc = Port of the caching algorithms in httplib2 for use with requests session object
 	pkgver = 0.14.0
-	pkgrel = 1
+	pkgrel = 2
 	epoch = 1
 	url = https://github.com/ionrock/cachecontrol
 	arch = any
 	license = Apache-2.0
 	checkdepends = python-cherrypy
-	checkdepends = python-mock
 	checkdepends = python-pytest
 	checkdepends = python-redis
 	makedepends = python-build
