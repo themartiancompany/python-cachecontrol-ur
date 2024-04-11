@@ -1,7 +1,7 @@
 pkgbase = python-cachecontrol
 	pkgdesc = Port of the caching algorithms in httplib2 for use with requests session object
 	pkgver = 0.14.0
-	pkgrel = 2
+	pkgrel = 3
 	epoch = 1
 	url = https://github.com/ionrock/cachecontrol
 	arch = any
